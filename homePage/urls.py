@@ -19,5 +19,4 @@ from homePage import views
 
 urlpatterns = [
     path('', views.home.as_view(), name = 'home'),
-    path('nsfw', views.nsfw.as_view(), name = 'nsfw')
 ]

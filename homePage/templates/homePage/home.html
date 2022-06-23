@@ -1,23 +1,19 @@
 {% extends 'global/base.html' %}
 
-{% block title %} Rule 34(not really){% endblock title %}
+{% block title %} Cut Cats for you{% endblock title %}
 {% block content %}
 
-<p class="heading">Waifu Machine</p>
+<p class="heading">Cat Machine</p>
 <div class="gallery container-fluid mt-0">
-  <form action = '' method='post' >
-    {% csrf_token %}
-   <button class = 'btn btn-dark mb-5 p-4 ' type="submit" >Nsfw Toggle</button>
-  </form>
   <div class = "row">
   {% for r in res %}
     <div class="col-lg-3 col-md-6">
       <div class = "img-box">
-        <img src="{{r.0.url}}" alt="{{r.0.image_id}}" class='img-fluid'/>
+        <img src="{{r.0.url}}" alt="{{r.0.id}}" class='img-fluid'/>
         <div class="transparent-box">
           <div class="caption">
-            <p>{{r.0.tags.0.name}}</p>
-            <p class="opacity-low">{{r.0.tags.0.description}}</p>
+            <p></p>
+            <p class="opacity-low"></p>
           </div>
         </div>
       </div>
