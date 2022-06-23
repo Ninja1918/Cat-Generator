@@ -1,0 +1,1 @@
+web: gunicorn rule34App.wsgi --log-file -
